@@ -32,18 +32,16 @@
         padding: 16px 24px;
     }
     #nav {
-        overflow: hidden;
+        display: none;
     }
-
-    #nav .nav-right{
-    
-       /* float: none;
-        position: absolute;
-        top: 0;
-        right: 0; */
-    }
-    /* #nav .nav-right a{
+    .nav-mobile{
         display: block;
+    
+    }
+    .nav-mobile li:first-child{
+        display: inline-block;
+    }
 
-    } */
+
+   
 }

@@ -49,7 +49,7 @@ html {
 
 }
 
-#nav {
+#nav{
     height: 54px;
     background-color: #fff !important;
     letter-spacing: 4px;
@@ -77,6 +77,41 @@ html {
 }
 #nav .nav-right {
     float: right;
+    
+}
+.nav-mobile{
+    display: none;
+    height: 54px;
+    background-color: #fff !important;
+    letter-spacing: 4px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+   
+}
+.nav-mobile li{
+    list-style: none;
+}
+.nav-mobile li a{
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+.nav-mobile .menu-icon-mobile{
+   padding: 0 23px;
+   position: absolute;
+    right: 0;
+    top: 0
+}
+.nav-mobile .menu-icon{
+    line-height: 54px;
+    font-size: 20px;
 }
 .header {
     

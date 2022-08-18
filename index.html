@@ -7,17 +7,31 @@
     <title>Catering</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
 </head>
 <body>
     <div id="app">
         <div id="nav">
-            <a href="#home">Gourmet au Catering</a>
+            <a href="#home">Gourmetau Catering</a>
                 <div class=" nav-right">
                     <a href="#about">About</a>
                     <a href="#menu">Menu</a>
                     <a href="#contact">Contact</a>
                 </div>
             
+            
+        </div>
+        <!-- mobile -->
+        <div id="nav-mobi" class="nav-mobile">
+            <ul>
+                <li><a href="#home">Gourmetau Catering</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="menu-mobile" class="menu-icon-mobile">
+                <i class=" menu-icon ti-menu"></i>
+            </div>
         </div>
 
         <header id="home" class="header">
@@ -101,6 +115,32 @@
 
         </div>
     </div>
+    <!-- mobile -->
+    <script>
+        var header= document.getElementById('nav-mobi');
+        var menuMobile = document.getElementById('menu-mobile');
+        var headerHeight = header.clientHeight;
+        menuMobile.onclick = function(){
+            var isClosed = header.clientHeight ===headerHeight;
+            if(isClosed){
+                header.style.height='auto';
+            } else {
+                header.style.height=null;
+            }
+
+        }
+        // tự động dóng menu khi click vào từng thẻ a trên menu
+       var menuItems = document.querySelectorAll('#nav-mobi li a[href *="#"]');
+       for(var i=0; i<menuItems.length; i++){
+        var menuItem = menuItems[i];
+        menuItem.onclick = function(){
+            header.style.height=null;
+
+        }
+       }
+
+    </script>
+    <!-- datetime -->
     <script>
         const now = new Date();
         now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
