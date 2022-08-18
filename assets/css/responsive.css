@@ -1,0 +1,49 @@
+@media(max-width : 1023px){
+
+    #content .content-section{
+        padding: 64px 36px;
+    }
+}
+@media (min-width:740px) and (max-width : 1023px){
+    .m-col-full{
+        width: 100%;
+    }
+    .about .sub-content-about{
+        display: none;
+    }
+    .contact .submit-form{
+        font-size: 20px;
+        padding: 16px;
+    }
+
+}
+@media(max-width :739px){
+    .s-col-full{
+        width: 100%;
+    }
+    .s-none{
+        display: none;
+    }
+    .contact .submit-form{
+        font-size: 20px;
+        padding: 16px;
+    }
+    .header .image-info{
+        padding: 16px 24px;
+    }
+    #nav {
+        overflow: hidden;
+    }
+
+    #nav .nav-right{
+    
+       /* float: none;
+        position: absolute;
+        top: 0;
+        right: 0; */
+    }
+    /* #nav .nav-right a{
+        display: block;
+
+    } */
+}
